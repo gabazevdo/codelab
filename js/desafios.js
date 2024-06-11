@@ -10,7 +10,7 @@
         text: "Figma"
       },
       {
-        href: "http://",
+        href: "https://github.com/gabazevdo/codelab/tree/main/desafios/01",
         iconName: "logo-github",
         text: "Github"
       },
