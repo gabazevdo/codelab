@@ -3,6 +3,7 @@
     imgSrc: "./images/print_codelab.png",
     imgAlt: "Print do site que fora desenvolvido",
     title: "Blog CodeLab",
+    numero: "001",
     links: [
       {
         href: "https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=0-1&t=CbvMxfU5H00kVbPY-1",
@@ -21,10 +22,9 @@
       }
     ]
   },
-    // Adicione mais objetos conforme necessário
-    // Inclua o objeto para o card "in-progress" no final do array
 
-    {
+    //Card "in-progress" no final do array
+{
       inProgress: true,
       title: "In progress..."
     }

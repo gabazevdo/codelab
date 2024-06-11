@@ -38,7 +38,7 @@ function renderCards() {
         <div class="box-imagem-desafio">
           <img src="${desafio.imgSrc}" alt="${desafio.imgAlt}" />
         </div>
-        <div class="box-titulo-desafio"><h3>${desafio.title}</h3></div>
+        <div class="box-titulo-desafio"><h3>${desafio.title}</h3> <h3>#${desafio.numero} </h3></div>
         <div class="box-link-desafios">
           ${desafio.links.map(link => `
             <a href="${link.href}" target="_blank" rel="noopener noreferrer">
