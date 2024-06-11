@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aqui serão listados todos os desafios da comunidade Codelab e que você pode participar também! É grátis, é bom e é pra todos."
+    />
+    <meta
+      name="keywords"
+      content="Comunidade Dev, CodeLab, Desafios, FrontEnd"
+    />
+    <meta name="author" content="Gabriel Azevedo" />
+    <meta name="robots" content="index, follow" />
+    <title>CodeLab - Desafios</title>
+    <link
+      rel="icon"
+      href="./images/logoCodelab.svg"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta property="og:title" content="CodeLab - Desafios" />
+    <meta
+      property="og:description"
+      content="Aqui serão listados todos os desafios da comunidade Codelab e que você pode participar também! É grátis, é bom e é pra todos."
+    />
+    <meta property="og:image" content="./images/logoCodelab.svg" />
+    <meta property="og:url" content="URL_da_Página" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <main id="container">
+      <header>
+        <div class="profile">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <h2><span>@</span>gabazevdo</h2>
+          </a>
+        </div>
+        <div
+          id="switch"
+          onclick="toggleTheme()"
+          aria-label="Alternar tema claro/escuro"
+        >
+          <button aria-hidden="true"></button>
+          <span></span>
+        </div>
+      </header>
+      <section id="intro">
+        <img
+          src="./images/logoCodelab_white.svg"
+          alt="Logo da comunidade CodeLab"
+        />
+        <div>
+          <h1>CodeLab<span>.</span></h1>
+        </div>
+      </section>
+      <section id="desafios">
+        <h2>Desafios<span>.</span></h2>
+        <div id="box-card"></div>
+      </section>
+      <footer>
+        <h3>Faça parte da comunidade</h3>
+        <img src="./images/logo_white.svg" alt="Logo da comunidade CodeLab" />
+        <a
+          href="https://iuricode.com/efront/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Disponível no plano PRO</span>
+        </a>
+      </footer>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module">
+      import { toggleTheme } from "./js/script.js";
+      window.toggleTheme = toggleTheme;
+    </script>
+  </body>
+</html>

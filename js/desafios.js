@@ -1,0 +1,34 @@
+﻿const desafios = [
+  {
+    imgSrc: "./images/print_codelab.png",
+    imgAlt: "Print do site que fora desenvolvido",
+    title: "Blog CodeLab",
+    links: [
+      {
+        href: "https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=0-1&t=CbvMxfU5H00kVbPY-1",
+        iconName: "logo-figma",
+        text: "Figma"
+      },
+      {
+        href: "http://",
+        iconName: "logo-github",
+        text: "Github"
+      },
+      {
+        href: "./desafios/01/index.html",
+        iconName: "link-outline",
+        text: "Link"
+      }
+    ]
+  },
+    // Adicione mais objetos conforme necessário
+    // Inclua o objeto para o card "in-progress" no final do array
+
+    {
+      inProgress: true,
+      title: "In progress..."
+    }
+  ];
+
+  // Exporta o array de desafios
+  export default desafios;
