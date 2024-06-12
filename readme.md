@@ -5,29 +5,33 @@
 <div style="  height:1px; background-color:#8946FF; "></div>
 
 <div>
- <p style="font-size:32px; margin-top: 30px; font-weight: 600;"> O projeto 🎓 </p>
+ <h2 style="font-size:32px; margin-top: 30px; font-weight: 600;"> O projeto 🎓 </h2>
  <p>
-  Neste repositório será postado projetos/desafios da comunidade <span style="color:#8946FF; font-weight: 600"> [CodeLab](https://github.com/iuricode/desafios-frontend)</span> que é open-source e possuí um conjunto de desafios <span style="font-style: italic; color:#8946FF;"> pela e para</span> a comunidade de desenvolvimento.
+  Neste repositório será postado projetos/desafios frontend, que é open-source e possuí um conjunto de desafios $\color{#8946ff}{\textsf{pela e para}}$  a comunidade de desenvolvimento.
 
 Seu propósito é ajudar os estudantes a praticarem seus conhecimentos em desenvolvimento frontend, abrangendo áreas como HTML, CSS, JavaScript e também bibliotecas como React, Vue e Angular.´
 
-<span style="color:#8946FF; font-weight: 600;" >Toda semana será proposto um novo desafio na comunidade para ser desenvolvido</span>
+$\color{#8946ff}{\textsf{Toda semana será proposto um novo desafio na comunidade para ser desenvolvido}}$ .
 
 Que por sua vez, poderá ser avaliado por desenvolvedores com maiores senioridades e que são ADM's e organizadores do projeto.
 
- </p>
+</p>
 </div>
+
+<br><br>
+
 
 <div>
- <p style="font-size:32px; margin-top: 30px; font-weight: 600;"> Os desafios 👨🏾‍💻</p>
+ <h2 style="font-size:32px; margin-top: 30px; font-weight: 600;"> Os desafios 👨🏾‍💻</h2>
 
-Você pode acessar todos os desafios <span style="color:#8946FF; font-weight: 600">[clicando neste link](https://gabazevdo.github.io/codelab/)</span>
+Você pode acessar todos os desafios já finalizados [clicando neste link](https://gabazevdo.github.io/codelab/).
 
-<div style="border: 1px solid #8946FF; padding: 1px; width: 32.6%">
-✅ status concluído <span style="color: #8946FF">|</span> ⚠️ em desenvolvimento
+<div>
+    
+|✅ status concluído|⚠️ em desenvolvimento| 
+| ----------------- | -------------------- |
+
 </div>
-
-<div style="margin-top: 15px; ">
 
 | Status | Desafio |    Nome     |
 | :----: | :-----: | :---------: |
@@ -36,4 +40,12 @@ Você pode acessar todos os desafios <span style="color:#8946FF; font-weight: 60
 
 </div>
 
-</div>
+<br><br><br> 
+
+<img width="200" src="https://github.com/gabazevdo/codelab/assets/16105546/3f88abd2-f7b9-4c9b-bb54-d301e01a3111)" alt="LOGO CODELAB">
+
+----
+
+Você está convidado a participar e conhecer a comunidade [CodeLab](https://github.com/iuricode/desafios-frontend)
+
+Adquira já o [material do Iuri Code](https://iuricode.com/efront/). São Ebooks de excelente qualidade e aprendizado. 
