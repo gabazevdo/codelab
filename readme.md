@@ -43,6 +43,10 @@ Você pode acessar todos os desafios já finalizados [clicando neste link](https
 
 <h2 style="font-size:32px; margin-top: 30px; font-weight: 600;">CodeLab</h2>
 
-Você está convidado a participar e conhecer a comunidade [CodeLab](https://github.com/iuricode/desafios-frontend)
+Você está convidado a  conhecer, participar e desenvolver com a comunidade [CodeLab](https://github.com/iuricode/desafios-frontend).
 
 Adquira já o [material do Iuri Code](https://iuricode.com/efront/). São Ebooks de excelente qualidade e aprendizado.
+
+<img width="1920" alt="Capa" src="https://github.com/gabazevdo/codelab/assets/16105546/ed791396-93d5-46b5-ba06-80ec6fa89c63">
+
+
