@@ -20,16 +20,15 @@ Que por sua vez, poderá ser avaliado por desenvolvedores com maiores senioridad
 
 <br><br>
 
-
 <div>
  <h2 style="font-size:32px; margin-top: 30px; font-weight: 600;"> Os desafios 👨🏾‍💻</h2>
 
 Você pode acessar todos os desafios já finalizados [clicando neste link](https://gabazevdo.github.io/codelab/).
 
 <div>
-    
-|✅ status concluído|⚠️ em desenvolvimento| 
-| ----------------- | -------------------- |
+
+| ✅ status concluído | ⚠️ em desenvolvimento |
+| ------------------- | --------------------- |
 
 </div>
 
@@ -40,12 +39,10 @@ Você pode acessar todos os desafios já finalizados [clicando neste link](https
 
 </div>
 
-<br><br><br> 
+<br><br><br>
 
-<img width="200" src="https://github.com/gabazevdo/codelab/assets/16105546/3f88abd2-f7b9-4c9b-bb54-d301e01a3111)" alt="LOGO CODELAB">
-
-----
+<h2 style="font-size:32px; margin-top: 30px; font-weight: 600;">CodeLab</h2>
 
 Você está convidado a participar e conhecer a comunidade [CodeLab](https://github.com/iuricode/desafios-frontend)
 
-Adquira já o [material do Iuri Code](https://iuricode.com/efront/). São Ebooks de excelente qualidade e aprendizado. 
+Adquira já o [material do Iuri Code](https://iuricode.com/efront/). São Ebooks de excelente qualidade e aprendizado.
