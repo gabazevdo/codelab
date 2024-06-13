@@ -30,15 +30,18 @@ function renderCards() {
     const card = document.createElement('div');
     card.className = 'card';
     if (desafio.inProgress) {
-      card.classList.add('in-progress'); // Adicione a classe 'in-progress' se for o card "in-progress"
+      card.classList.add('in-progress');
     }
 
-    if (!desafio.inProgress) { // Se não for o card "in-progress", crie o conteúdo normal do card
+    if (!desafio.inProgress) {
       card.innerHTML = `
         <div class="box-imagem-desafio">
           <img src="${desafio.imgSrc}" alt="${desafio.imgAlt}" />
         </div>
-        <div class="box-titulo-desafio"><h3>${desafio.title}</h3> <h3>#${desafio.numero} </h3></div>
+        <div class="box-titulo-desafio">
+          <h3>${desafio.title}</h3>
+          <h3>#${desafio.numero}</h3>
+        </div>
         <div class="box-link-desafios">
           ${desafio.links.map(link => `
             <a href="${link.href}" target="_blank" rel="noopener noreferrer">
@@ -48,7 +51,7 @@ function renderCards() {
           `).join('')}
         </div>
       `;
-    } else { // Se for o card "in-progress", crie seu conteúdo específico
+    } else {
       card.innerHTML = `
         <div class="in-progress">
           <ion-icon name="eye-off-outline"></ion-icon>
@@ -61,7 +64,7 @@ function renderCards() {
   });
 }
 
-// Chama a função para renderizar os cards na inicialização da página
+
 document.addEventListener('DOMContentLoaded', renderCards);
 
 
