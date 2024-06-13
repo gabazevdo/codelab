@@ -1,0 +1,351 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #7ca2f4;
+  --dark: #121214;
+  --gray: #f3f7ff;
+  --white: #ffffff;
+}
+
+/* Tipografia */
+html * {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+/* Corpo da Página */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--white);
+  color: var(--dark);
+  min-height: 100vh;
+}
+
+#anuncio-topo {
+  background-color: var(--gray);
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 19px 0;
+}
+
+header {
+  width: 100%;
+  height: 375px;
+  background-image: url("./images/image-michael-jordan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 90px 24px;
+  display: flex;
+}
+
+.info-header {
+  color: var(--white);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.image-logo {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image-logo img {
+  height: 100%;
+}
+.image-logo span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.text-header h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.text-header p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  height: auto;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.div-txt-aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.div-txt-aside h2 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.div-txt-aside p {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.box-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  align-items: stretch;
+}
+
+.card {
+  width: 100%;
+  height: 326px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.img-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  background-color: var(--gray);
+}
+
+.img-card img {
+  width: 225px;
+  transition: transform 0.5s;
+}
+
+.img-card img:hover {
+  transform: rotate(5deg);
+}
+
+.nome-tenis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nome-tenis p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.nome-tenis span {
+  color: var(--brand-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.preco {
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #anuncio-topo {
+    font-size: 10px;
+    height: 41px;
+    padding: 12px;
+  }
+  header {
+    height: 350px;
+  }
+
+  .info-header {
+    max-width: 55%;
+  }
+
+  .text-header h1 {
+    font-size: 24px;
+  }
+
+  .text-header p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+  }
+  aside {
+    align-items: center;
+  }
+  .div-txt-aside {
+    max-width: 520px;
+  }
+  .div-txt-aside h2 {
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26.11px;
+    text-align: center;
+  }
+
+  .div-txt-aside p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+  }
+
+  .nome-tenis p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    text-align: left;
+  }
+  .nome-tenis span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.41px;
+    text-align: left;
+  }
+
+  .preco {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.52px;
+    text-align: left;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* Media Queries para Monitores (Desktops) */
+@media (min-width: 1024px) {
+  #anuncio-topo {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.11px;
+    text-align: center;
+  }
+
+  header {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-logo {
+    font-family: Archivo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.11px;
+    text-align: left;
+  }
+
+  .text-header img {
+    width: 39px;
+  }
+
+  .text-header h1 {
+    font-size: 32px;
+  }
+
+  .text-header p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    width: 55%;
+  }
+  aside {
+    align-items: center;
+    max-width: 916px;
+  }
+  .div-txt-aside {
+    max-width: 450px;
+  }
+  .div-txt-aside h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34.82px;
+    text-align: center;
+  }
+
+  .div-txt-aside p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: center;
+  }
+
+  .nome-tenis p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.4px;
+    text-align: left;
+  }
+  .nome-tenis span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.41px;
+    text-align: left;
+  }
+
+  .preco {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.52px;
+    text-align: left;
+  }
+
+  .card {
+    width: calc(33.3333333333% - 27px);
+  }
+}
