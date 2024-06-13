@@ -35,7 +35,8 @@ Você pode acessar todos os desafios já finalizados [clicando neste link](https
 | Status | Desafio |    Nome     |
 | :----: | :-----: | :---------: |
 |   ✅   |   01    |    Blog     |
-|   ⚠️   |   02    | JordanShoes |
+|   ✅   |   02    | JordanShoes |
+|   ⚠️   |   03    | Loading... |
 
 </div>
 
