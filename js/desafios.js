@@ -28,7 +28,7 @@
     numero: "002",
     links: [
       {
-        href: "https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=0-1&t=CbvMxfU5H00kVbPY-1",
+        href: "https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=257087-175&t=ArqLsCF4HD2IZD2z-0",
         iconName: "logo-figma",
         text: "Figma"
       },
