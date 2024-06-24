@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Encontre os melhores artigos de programação em um só lugar. Explore dicas e tendências atuais sobre tecnologia e programação."
+    />
+    <meta
+      name="keywords"
+      content="programação, artigos, tecnologia, dicas, tendências"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>TechBlog</title>
   </head>
@@ -15,8 +24,8 @@
             lugar
           </h1>
           <p>
-            Explore o topo da programação em um só lugar! <br />Seu destino
-            único para dicas e tendências atuais.
+            Explore o topo da programação em um só lugar! Seu destino único para
+            dicas e tendências atuais.
           </p>
           <a href="#artigos"> Buscar artigos </a>
         </div>
@@ -29,7 +38,77 @@
       </div>
     </header>
     <main>
-      <section></section>
+      <section id="articles">
+        <h2>Artigos recomendados</h2>
+        <div class="card-section" id="card-section">
+          <div class="card">
+            <div class="image-card">
+              <img
+                src="./images/image-1.png"
+                alt="Imagem de uma tela de notebook mostrando códigos de programação"
+                loading="lazy"
+              />
+            </div>
+            <div class="content-card">
+              <h3>O que é linguagem de programação? Conheça as principais</h3>
+              <p>
+                Uma das mais populares vertentes da tecnologia da informação, a
+                área de...
+              </p>
+            </div>
+          </div>
+          <!-- DEMAIS CARDS SENDO RENDERIZADOS VIA JAVASCRIPT -->
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="content-contact">
+          <h2>Entre em contato</h2>
+          <form action="#" method="post">
+            <label for="nome"></label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome"
+              required
+            />
+
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="mensagem"></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              placeholder="Assunto da mensagem"
+              required
+            ></textarea>
+
+            <button type="submit">Entrar em contato</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>
+        Desafio Comunidade
+        <a href="https://github.com/iuricode/desafios-frontend" target="_blank"
+          >CodeLab</a
+        >.
+      </p>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/gabazevdo" target="_blank">Gabazevdo</a>.
+      </p>
+    </footer>
+    <script src="./js/script.js" async></script>
   </body>
 </html>

@@ -28,6 +28,15 @@ a {
   display: inline;
   cursor: pointer;
 }
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 2px;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -39,7 +48,6 @@ header {
   width: 100%;
   min-height: 550px;
   background-color: var(--gray-40);
-
   display: flex;
   justify-content: center;
 }
@@ -60,7 +68,6 @@ header {
 }
 
 .content-header h1 {
-  font-family: Roboto;
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -71,7 +78,7 @@ header {
   color: var(--brand-color);
 }
 .content-header p {
-  font-family: Roboto;
+  max-width: 550px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -89,10 +96,363 @@ header {
   line-height: 21.09px;
   text-align: center;
   color: var(--white);
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.content-header a:hover {
+  background-color: #6b51ee;
 }
 
 .image-header {
   width: 100%;
   max-width: 400px;
+}
+
+main {
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+#articles {
+  max-width: 1216px;
+  margin: 80px 0;
+}
+
+#articles h2 {
+  margin-bottom: 113px;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-align: left;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--gray-30);
+  overflow: hidden;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 18px;
+}
+
+.content-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  display: -webkit-box; /* Necessário para aplicar -webkit-line-clamp */
+  -webkit-line-clamp: 2; /* Número máximo de linhas */
+  -webkit-box-orient: vertical; /* Orientação da caixa */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa o tamanho definido */
+  text-overflow: ellipsis; /* Adiciona reticências ao conteúdo que ultrapassa */
+}
+.content-card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+
+.image-card {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.1);
+}
+
+#contact {
+  background-color: var(--gray-40);
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-contact {
+  width: 100%;
+  max-width: 592px;
+}
+
+.content-contact h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+input,
+textarea {
+  padding: 19px 24px;
+  border: 1px solid var(--gray-20);
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 150px;
+}
+input,
+textarea::placeholder {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: left;
+  color: var(--gray-10);
+}
+
+button {
+  margin-top: 40px;
+  padding: 14px 32px;
+  background-color: var(--brand-color);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #6b51ee;
+}
+
+footer {
+  background-color: var(--gray-20);
+  width: 100%;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+footer a {
+  font-weight: 600;
+  color: var(--brand-color);
+}
+
+@media (min-width: 1025px) {
+  .header,
+  #articles {
+    padding: 24px;
+  }
+}
+
+/* Media Query para tablets (largura de tela entre 768px e 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    margin: 64px 109px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .content-header {
+    padding: 0;
+    align-items: center;
+  }
+
+  .content-header h1 {
+    text-align: center;
+  }
+
+  #articles {
+    margin: 80px 0;
+    padding: 0 32px;
+  }
+
+  #articles h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.81px;
+    margin-bottom: 56px;
+    text-align: left;
+  }
+
+  .card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-contact h2 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.81px;
+  }
+
+  .content-contact {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    margin: 64px 109px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .content-header {
+    padding: 0;
+    align-items: center;
+  }
+
+  .content-header h1 {
+    text-align: center;
+  }
+
+  #articles {
+    margin: 80px 0;
+    padding: 0 32px;
+  }
+
+  #articles h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.81px;
+    margin-bottom: 56px;
+    text-align: left;
+  }
+
+  .card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-contact h2 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.81px;
+  }
+
+  .content-contact {
+    max-width: 704px;
+  }
+}
+
+/* Media Query para smartphones (largura de tela menor que 768px) */
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    margin: 64px 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .content-header {
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  .content-header p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .content-header a {
+    font-size: 14px;
+    padding: 14px 0;
+    width: 100%;
+    transition: all 0.2s;
+  }
+
+  .content-header a:hover {
+    background-color: #6b51ee;
+  }
+
+  .image-header {
+    padding: 0 64px;
+  }
+  .image-header img {
+    width: 100%;
+  }
+
+  #articles {
+    margin: 64px 0;
+    padding: 0 24px;
+  }
+
+  #articles h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.81px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .card-section {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .content-contact {
+    width: 100%;
+    padding: 0 24px;
+  }
+  .content-contact h2 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.81px;
+  }
 }
