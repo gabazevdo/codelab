@@ -43,6 +43,28 @@
         text: "Link"
       }
     ]
+  },  {
+    imgSrc: "./images/desafio03.png",
+    imgAlt: "Print do desafio 03 TechBlog",
+    title: "TechBlog",
+    numero: "003",
+    links: [
+      {
+        href: "https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=3725-2&t=Bv1YH3FBm5MFqfaM-0",
+        iconName: "logo-figma",
+        text: "Figma"
+      },
+      {
+        href: "https://github.com/gabazevdo/codelab/tree/main/desafios/03",
+        iconName: "logo-github",
+        text: "Github"
+      },
+      {
+        href: "./desafios/03/index.html",
+        iconName: "link-outline",
+        text: "Link"
+      }
+    ]
   },
 
     //Card "in-progress" no final do array
