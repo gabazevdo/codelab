@@ -37,7 +37,8 @@ Você pode acessar todos os desafios já finalizados [clicando neste link](https
 |   ✅   |   01    |    Blog     |
 |   ✅   |   02    | JordanShoes |
 |   ✅   |   03    |  TechBlog   |
-|   ⚠️   |   04    | Loading...  |
+|   ✅   |   04    |    Login    |
+|   ⚠️   |   05    |     ...     |
 
 </div>
 
