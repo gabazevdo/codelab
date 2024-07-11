@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --brand-color: #1e9e6a;
+
+  --dark: #1a202c;
+  --gray-10: #656769;
+  --gray-20: #e8e8e8;
+  --gray-30: #f7fafc;
+
+  --green-10: #f3fff2;
+
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Costumize checkbox link W3S: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+/* Customize the label (the container) */
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: var(--gray-30);
+  border: 1px solid var(--gray-20);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-check input:checked ~ .checkmark {
+  background-color: var(--brand-color);
+}
+
+html {
+  font-family: "Archivo", sans-serif;
+}
+
+a {
+  all: unset;
+  display: inline;
+  cursor: pointer;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, var(--green-10) 50%, var(--white) 50%);
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+
+  display: flex;
+}
+
+#img-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-content {
+  width: 400px;
+}
+
+.text-form {
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.text-form p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21.76px;
+  text-align: left;
+}
+.text-form h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34.82px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+input[type="email"] + label {
+  margin-top: 32px;
+}
+input {
+  border: 1px solid var(--gray-20);
+  background-color: var(--gray-30);
+  border-radius: 4px;
+  height: 49px;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.41px;
+  text-align: left;
+  padding: 16px;
+}
+
+input[type="checkbox"] {
+  background-color: var(--gray-30);
+  border: 1px solid var(--gray-20);
+  margin: 0;
+}
+
+.recuperacao {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.recuperacao a {
+  color: var(--brand-color);
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+  text-align: end;
+}
+
+form button {
+  margin-top: 56px;
+  padding: 16px 0;
+  border-radius: 4px;
+
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--brand-color);
+
+  text-align: center;
+  transition: all 0.2s;
+
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #2db880;
+}
+
+#btn-google {
+  margin-top: 24px;
+  height: 52px;
+  border-radius: 4px;
+  width: 100%;
+
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--dark);
+
+  text-align: center;
+  transition: all 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 64px;
+}
+
+#btn-google img {
+  width: 24px;
+}
+
+#btn-google:hover {
+  background-color: #292f3b;
+}
+
+.secadastre {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21.76px;
+  text-align: center;
+}
+
+.secadastre a {
+  color: var(--brand-color);
+}
+
+/* Media Query para tablets (largura de tela entre 768px e 1024px) */
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background: var(--white);
+  }
+
+  #img-section {
+    display: none;
+  }
+
+  #login-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Media Query para smartphones (largura de tela menor que 768px) */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background: var(--white);
+  }
+
+  #img-section {
+    display: none;
+  }
+
+  #login-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #form-content {
+    margin: 24px;
+  }
+
+  .text-form {
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .text-form p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.41px;
+    text-align: left;
+  }
+  .text-form h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26.11px;
+    text-align: left;
+  }
+
+  input[type="email"] + label {
+    margin-top: 32px;
+  }
+
+  input {
+    border: 1px solid var(--gray-20);
+    background-color: var(--gray-30);
+    border-radius: 4px;
+    height: 49px;
+  }
+  input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.41px;
+    text-align: left;
+    padding: 16px;
+  }
+
+  .recuperacao {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .container-check {
+    font-size: 14x;
+    font-weight: 500;
+    flex-grow: 1;
+  }
+
+  .recuperacao a {
+    color: var(--brand-color);
+    font-size: 14x;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: end;
+  }
+
+  form button {
+    margin-top: 56px;
+    padding: 16px 0;
+    border-radius: 4px;
+
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--brand-color);
+
+    text-align: center;
+    transition: all 0.2s;
+
+    width: 100%;
+  }
+
+  form button:hover {
+    background-color: #2db880;
+  }
+
+  #btn-google {
+    margin-top: 24px;
+    height: 52px;
+    border-radius: 4px;
+    width: 100%;
+
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--dark);
+
+    text-align: center;
+    transition: all 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 64px;
+  }
+
+  #btn-google img {
+    width: 24px;
+  }
+
+  #btn-google:hover {
+    background-color: #292f3b;
+  }
+
+  .secadastre {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.76px;
+    text-align: center;
+  }
+
+  .secadastre a {
+    color: var(--brand-color);
+  }
+}
