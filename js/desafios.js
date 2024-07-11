@@ -66,6 +66,29 @@
       }
     ]
   },
+  ,  {
+    imgSrc: "./images/desafio04.png",
+    imgAlt: "Print do desafio 04 Login",
+    title: "Login",
+    numero: "004",
+    links: [
+      {
+        href: "https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=4261-2&t=Bv1YH3FBm5MFqfaM-0",
+        iconName: "logo-figma",
+        text: "Figma"
+      },
+      {
+        href: "https://github.com/gabazevdo/codelab/tree/main/desafios/04",
+        iconName: "logo-github",
+        text: "Github"
+      },
+      {
+        href: "./desafios/04/index.html",
+        iconName: "link-outline",
+        text: "Link"
+      }
+    ]
+  },
 
     //Card "in-progress" no final do array
 {
